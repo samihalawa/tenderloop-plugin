@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.samihalawa/tenderloop",
+  "title": "TenderLoop",
+  "description": "Your own free-text tender instructions, the tenders your agents logged and the opportunities found.",
+  "websiteUrl": "https://tenderloop.eu",
+  "repository": {
+    "url": "https://github.com/samihalawa/tenderloop-plugin",
+    "source": "github"
+  },
+  "version": "0.6.19",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://tenderloop.eu/mcp"
+    }
+  ],
+  "icons": [
+    {
+      "src": "https://tenderloop.eu/icon-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ]
+}

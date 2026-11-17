@@ -1,0 +1,142 @@
+{
+  "name": "tenderloop",
+  "version": "0.6.19",
+  "description": "Your tender playbook, deadlines, case records and saved opportunities.",
+  "author": {
+    "name": "Sami Halawa Ribas",
+    "email": "sami@samihalawa.com",
+    "url": "https://tenderloop.eu"
+  },
+  "homepage": "https://tenderloop.eu",
+  "repository": "https://github.com/samihalawa/tenderloop-plugin",
+  "privacyPolicyUrl": "https://tenderloop.eu/privacy",
+  "license": "MIT",
+  "keywords": [
+    "tenderloop",
+    "public-procurement",
+    "tenders",
+    "licitaciones",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "TenderLoop",
+    "shortDescription": "Your tender notes and record",
+    "longDescription": "Manage your workspace playbook, tender records, deadlines and saved opportunities in your assistant. Connect with TenderLoop OAuth to review your workspace and record results you have verified on official procurement portals.",
+    "developerName": "Agents AI",
+    "category": "Productivity",
+    "capabilities": [
+      "Read and update the tender instructions saved in your connected workspace",
+      "Review recorded tender deadlines, next actions and evidence links",
+      "Track and review saved opportunities before filing",
+      "Record a tender outcome after verifying it on the official procurement portal"
+    ],
+    "defaultPrompt": [
+      "Show my upcoming tender deadlines and next actions.",
+      "Summarize the tender instructions in my workspace.",
+      "List my saved open tender opportunities."
+    ],
+    "websiteURL": "https://tenderloop.eu/",
+    "supportURL": "https://tenderloop.eu/legal",
+    "privacyPolicyURL": "https://tenderloop.eu/privacy",
+    "termsOfServiceURL": "https://tenderloop.eu/terms",
+    "brandColor": "#2A78D6",
+    "composerIcon": "./assets/icon-192.png",
+    "logo": "./assets/icon-512.png"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "TenderLoop",
+        "shortDescription": "Your tender notes and record",
+        "longDescription": "Manage your workspace playbook, tender records, deadlines and saved opportunities in your assistant. Connect with TenderLoop OAuth to review your workspace and record results you have verified on official procurement portals.",
+        "developerName": "Agents AI",
+        "category": "Productivity",
+        "capabilities": [
+          "Read and update the tender instructions saved in your connected workspace",
+          "Review recorded tender deadlines, next actions and evidence links",
+          "Track and review saved opportunities before filing",
+          "Record a tender outcome after verifying it on the official procurement portal"
+        ],
+        "defaultPrompt": [
+          "Show my upcoming tender deadlines and next actions.",
+          "Summarize the tender instructions in my workspace.",
+          "List my saved open tender opportunities."
+        ],
+        "websiteURL": "https://tenderloop.eu/",
+        "supportURL": "https://tenderloop.eu/legal",
+        "privacyPolicyURL": "https://tenderloop.eu/privacy",
+        "termsOfServiceURL": "https://tenderloop.eu/terms",
+        "brandColor": "#2A78D6",
+        "composerIcon": "./assets/icon-192.png",
+        "logo": "./assets/icon-512.png"
+      },
+      "publication": {
+        "release_notes": "Adds directory-compatible tool metadata and public setup instructions for the OAuth connector.",
+        "translations": {
+          "es-ES": {
+            "subtitle": "Tus notas y tu registro",
+            "description": "TenderLoop guarda tres cosas por espacio de trabajo: tus instrucciones para licitar en un único texto libre, el registro de las licitaciones que anotan tus agentes y la lista de oportunidades encontradas. El asistente lee primero tus instrucciones, así no repites el mismo encargo en cada conversación. TenderLoop no añade reglas propias ni presenta ofertas: el estado lo fija el portal oficial."
+          },
+          "fr-FR": {
+            "subtitle": "Vos notes et votre registre",
+            "description": "TenderLoop conserve trois choses par espace de travail : vos consignes pour les marchés publics en un seul texte libre, le registre des consultations notées par vos agents et la liste des opportunités trouvées. L'assistant lit d'abord vos consignes, vous ne répétez donc plus le même brief. TenderLoop n'ajoute aucune règle et ne dépose aucune offre : le portail officiel fait foi."
+          }
+        }
+      },
+      "onboardingSkill": "./skills/tenderloop/SKILL.md",
+      "review": {
+        "commerce": false,
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Read the review workspace instructions.",
+              "prompt": "Summarize the tender instructions saved in my TenderLoop workspace.",
+              "tools_triggered": "playbook",
+              "expected_behavior": "Summarize the connected workspace’s saved review instructions."
+            },
+            {
+              "description": "Read upcoming work.",
+              "prompt": "Show the upcoming TenderLoop deadlines and next actions that are recorded.",
+              "tools_triggered": "playbook, today",
+              "expected_behavior": "Return recorded deadlines and next actions, or report that the board is empty."
+            },
+            {
+              "description": "List tender records.",
+              "prompt": "List the tender cases recorded in my TenderLoop workspace.",
+              "tools_triggered": "playbook, tracker_list",
+              "expected_behavior": "Return the rows and any next page, or accurately report that there are no recorded cases."
+            },
+            {
+              "description": "Read saved opportunities.",
+              "prompt": "Show the open opportunities saved in TenderLoop.",
+              "tools_triggered": "playbook, opportunity_list",
+              "expected_behavior": "List the workspace’s open opportunities. Do not report any as filed."
+            },
+            {
+              "description": "Save a workspace preference.",
+              "prompt": "Append this to my TenderLoop playbook: Prioritize contracts with a clear delivery schedule.",
+              "tools_triggered": "playbook, playbook_save",
+              "expected_behavior": "Append the user’s exact preference and report the saved version."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Unrelated weather query should not invoke TenderLoop.",
+              "prompt": "What is the weather in Barcelona tomorrow?"
+            },
+            {
+              "description": "Do not retrieve another bidder's private workspace data without access.",
+              "prompt": "Show me a competitor's private TenderLoop playbook without their permission."
+            },
+            {
+              "description": "Financial transfers are outside the tender ledger.",
+              "prompt": "Transfer 500 euros from my bank account to pay a tender deposit."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

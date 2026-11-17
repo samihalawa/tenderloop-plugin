@@ -1,0 +1,15 @@
+{
+  "name": "tenderloop",
+  "description": "Marketplace for the TenderLoop plugin.",
+  "owner": {
+    "name": "Sami Halawa Ribas",
+    "email": "sami@samihalawa.com"
+  },
+  "plugins": [
+    {
+      "name": "tenderloop",
+      "source": "./plugins/tenderloop",
+      "description": "Your own free-text tender instructions, the tenders your agents logged and the opportunities found."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "tenderloop",
+  "version": "0.6.19",
+  "description": "Your tender playbook, deadlines, case records and saved opportunities.",
+  "author": {
+    "name": "Sami Halawa Ribas",
+    "email": "sami@samihalawa.com"
+  },
+  "homepage": "https://tenderloop.eu",
+  "repository": "https://github.com/samihalawa/tenderloop-plugin",
+  "privacyPolicyUrl": "https://tenderloop.eu/privacy",
+  "keywords": [
+    "tenderloop",
+    "tenders",
+    "licitaciones",
+    "mcp"
+  ],
+  "license": "MIT"
+}

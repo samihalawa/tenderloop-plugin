@@ -1,0 +1,20 @@
+{
+  "name": "tenderloop",
+  "interface": {
+    "displayName": "TenderLoop"
+  },
+  "plugins": [
+    {
+      "name": "tenderloop",
+      "source": {
+        "source": "local",
+        "path": "./plugins/tenderloop"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
