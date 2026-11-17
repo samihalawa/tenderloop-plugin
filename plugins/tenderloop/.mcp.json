@@ -2,17 +2,7 @@
   "mcpServers": {
     "tenderloop": {
       "type": "http",
-      "url": "https://tenderloop.eu/mcp",
-      "extensions": {
-        "com.openai": {
-          "auth": {
-            "type": "oauth",
-            "client": {
-              "mode": "dcr"
-            }
-          }
-        }
-      }
+      "url": "https://tenderloop.eu/mcp"
     }
   }
 }
