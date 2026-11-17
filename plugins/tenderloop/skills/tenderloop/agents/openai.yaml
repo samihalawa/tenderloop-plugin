@@ -1,13 +1,13 @@
 interface:
   display_name: "TenderLoop"
-  short_description: "File and follow up public tenders"
-  default_prompt: "Use my TenderLoop playbook to complete the tender work I assign and verify the official results."
+  short_description: "Review and track public tenders"
+  default_prompt: "Show my upcoming TenderLoop deadlines and summarize my saved tender criteria."
 
 dependencies:
   tools:
     - type: "mcp"
       value: "tenderloop"
-      description: "Manage TenderLoop applications, deadlines, portal catch-up requests, and signed pack links."
+      description: "Manage TenderLoop application records, deadlines, saved opportunities and portal recheck requests."
       transport: "streamable_http"
       url: "https://tenderloop.eu/mcp"
 

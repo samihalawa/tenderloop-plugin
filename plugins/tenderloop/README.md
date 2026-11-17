@@ -1,4 +1,4 @@
-# TenderLoop 0.6.19
+# TenderLoop 0.6.20
 
 TenderLoop gives your assistants one briefing and record for each workspace:
 
@@ -6,7 +6,7 @@ TenderLoop gives your assistants one briefing and record for each workspace:
 - **Your record**: the tenders your agents logged, with receipts, deadlines, next steps and history.
 - **Your opportunities**: tenders found and not yet filed.
 
-The assistant reads the workspace playbook, completes the tender work authorized by the user, verifies the result on the procurement portal and records the evidence. Each account sees its connected workspace.
+Ask your assistant to read your saved tender criteria, review recorded work or log an outcome you verified. TenderLoop stores records in the workspace you connect. File bids and respond to notices on the buyer’s official procurement portal, then use its receipt or notice as evidence in TenderLoop.
 
 ## Connect
 
@@ -17,7 +17,7 @@ The server is `https://tenderloop.eu/mcp` (OAuth: sign in or create an account i
 - Codex: `codex mcp add tenderloop --url https://tenderloop.eu/mcp`, then `codex mcp login tenderloop`.
 - ChatGPT: Settings → Connectors (developer mode) → add `https://tenderloop.eu/mcp`.
 
-Open each portal in your own tab of the workspace's TenderLoop browser and verify the sign-in visible on the portal. To set up a browser connection, install the [TenderLoop Chrome extension](https://tenderloop.eu/downloads/tenderloop-chrome.zip), open its popup as a tab, click **Pair with connector**, call `chrome_pair` with the displayed challenge, and enter the returned code in that same tab. Enable **Connect TenderLoop Chrome** when authorizing this workflow.
+Use the buyer’s portal in your own browser. The optional [TenderLoop Chrome extension](https://tenderloop.eu/downloads/tenderloop-chrome.zip) can connect a browser profile when you expressly authorize the **Connect TenderLoop Chrome** scope. Open the extension as a tab, select **Pair with connector**, then use `chrome_pair` with the challenge and enter the returned code in that same tab.
 
 If an operation returns `insufficient_scope`, reauthorize the same workspace in your client with the requested permission. Check the current case and existing receipt before retrying a write. Refreshing an existing connection keeps its granted permissions.
 

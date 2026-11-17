@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.20
+
+- Clarifies how to review saved tender criteria, check recorded work and log an outcome verified on the official procurement portal.
+
 ## 0.6.19
 
 - Makes the OAuth connector discoverable by ChatGPT and supplies readable tool titles for the Claude directory.

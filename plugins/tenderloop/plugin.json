@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "tenderloop",
-  "version": "0.6.19",
+  "version": "0.6.20",
   "description": "Your tender playbook, deadlines, case records and saved opportunities.",
   "author": {
     "name": "Sami Halawa Ribas",
@@ -48,15 +48,15 @@
         "logo": "./assets/icon-512.png"
       },
       "publication": {
-        "release_notes": "Adds directory-compatible tool metadata and public setup instructions for the OAuth connector.",
+        "release_notes": "Clarifies connector setup, approved workspace access and using recorded evidence from the official procurement portal.",
         "translations": {
           "es-ES": {
             "subtitle": "Tus notas y tu registro",
-            "description": "TenderLoop guarda tres cosas por espacio de trabajo: tus instrucciones para licitar en un único texto libre, el registro de las licitaciones que anotan tus agentes y la lista de oportunidades encontradas. El asistente lee primero tus instrucciones, así no repites el mismo encargo en cada conversación. TenderLoop no añade reglas propias ni presenta ofertas: el estado lo fija el portal oficial."
+            "description": "Consulta las instrucciones guardadas, los plazos registrados y las oportunidades de tu espacio de trabajo. Conecta tu cuenta de TenderLoop y guarda el resultado cuando lo hayas verificado en el portal oficial de contratación."
           },
           "fr-FR": {
             "subtitle": "Vos notes et votre registre",
-            "description": "TenderLoop conserve trois choses par espace de travail : vos consignes pour les marchés publics en un seul texte libre, le registre des consultations notées par vos agents et la liste des opportunités trouvées. L'assistant lit d'abord vos consignes, vous ne répétez donc plus le même brief. TenderLoop n'ajoute aucune règle et ne dépose aucune offre : le portail officiel fait foi."
+            "description": "Consultez vos critères enregistrés, les échéances et les opportunités de votre espace de travail. Connectez votre compte TenderLoop et consignez les résultats que vous avez vérifiés sur le portail officiel."
           }
         }
       },
