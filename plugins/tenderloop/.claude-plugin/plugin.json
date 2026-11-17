@@ -8,6 +8,7 @@
   },
   "homepage": "https://tenderloop.eu",
   "repository": "https://github.com/samihalawa/tenderloop-plugin",
+  "icon": "./assets/icon-512.png",
   "privacyPolicyUrl": "https://tenderloop.eu/privacy",
   "keywords": [
     "tenderloop",
