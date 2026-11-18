@@ -1,4 +1,4 @@
-# TenderLoop 0.6.25
+# TenderLoop 0.6.26
 
 TenderLoop gives your assistants one briefing and record for each workspace:
 
@@ -7,6 +7,8 @@ TenderLoop gives your assistants one briefing and record for each workspace:
 - **Your opportunities**: tenders found and not yet filed.
 
 Give your assistant the plugin name and the task: for example, “Use TenderLoop to find and file a new tender” or “Use TenderLoop to create my updated report with audio.” The assistant reads your workspace playbook, uses its available execution tools for the requested work, and verifies the result. TenderLoop supplies context and recordkeeping; official portals handle filings, and the assistant's configured production tools create reports and audio. Preserve an explicit request to review only or prepare a draft.
+
+The bundled skill contains the execution and whole-task review workflow directly. MCP tool descriptions describe the operations themselves; no separate remote behavioral guide is fetched. The bundled skill calls for native independent review where supported, with equivalent evidence checks where it is unavailable. Only the actual output or official receipt establishes the result.
 
 ## Connect
 
@@ -28,7 +30,6 @@ For e-marchespublics.com (Dematis), use the [account reconciliation guide](skill
 | Tool | What it does |
 |---|---|
 | `playbook` / `playbook_save` | Start with `playbook` and `limit: 4000`. Continue from `next_offset` with the same `part` and `expected_version`. Save updates as prose. |
-| `completion_guide` | Read once at task entry after the complete playbook. Static guidance covers current authority, the actual local or cloud execution context, full scope and native evidence. Before closing the whole task, the assistant checks results and uses a native independent reviewer when available. The tool returns guidance, not a verdict or proof of execution. |
 | `chrome_pair` | Pair the Chrome extension through the signed-in OAuth connector. |
 | `get_profile` | The workspace's name, bidder identity and evidence-folder link. |
 | `today` | Work totals and previews with `pagination` for each section. Continue sections in scope using `next_offset`. `section: changed` lists changed cases. Pass the returned `since` on each continuation. `section: news` lists log entries. |

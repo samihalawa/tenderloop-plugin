@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.26
+
+- Keeps the execution and whole-task review workflow directly in the bundled skill, with current-authority checks, correct browser context and native evidence verification.
+- Removes the separate remote behavioral-guide tool. MCP descriptions state each operation's actual function, and connection context describes workspace records and evidence semantics.
+- Preserves existing tool identities, schemas, workspace permissions, receipts and pagination behavior.
+
 ## 0.6.25
 
 - Replaces the long entry instructions with a shorter ordered workflow and reads the static completion guide once at task entry, after the complete playbook.
