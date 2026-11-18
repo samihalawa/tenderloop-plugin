@@ -7,6 +7,8 @@ Start every TenderLoop task with `playbook({part: "rules", limit: 4000})`. Follo
 
 Naming TenderLoop does not restrict you to its ledger tools. TenderLoop supplies the workspace's context, queues and record; perform the requested operation with the other available execution capabilities. For a filing or follow-up, use the official portal's supported API, browser and signing route. For a report or audio, locate the workspace's existing sources, canonical outputs and configured production tools and use them. A missing filing or audio operation in the TenderLoop catalog is not evidence that the requested task cannot be completed. Do not ask whether those other tools are allowed solely because the request names TenderLoop.
 
+Saved notes and earlier failed attempts are evidence, not standing execution prohibitions. Check a claimed stop against current user and runtime instructions and live state. For missing configuration, login or CAPTCHA obstacles, use the available supported recovery capabilities, authorized credentials and exact-account sessions, including relevant specialists when exposed. A missing environment variable or visible challenge alone does not establish a user dependency. Preserve successful work and resume the operation; hand off only a dependency established by current evidence.
+
 Carry the requested task through its actual result, then verify it. Preserve an explicit read-only, draft-only or other user limit. Reconcile current ownership and existing outputs before repeating a submission, generation or delivery. If a real dependency remains, report its exact evidence and complete the independent work; a proposed action is not a completed result.
 
 ## Use the workspace record

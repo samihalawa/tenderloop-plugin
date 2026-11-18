@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.22
+
+- Treats historical failure notes as evidence to recheck against the live service and current instructions.
+- Directs the assistant to use available supported configuration, login and CAPTCHA recovery for authorized work before handing an executable step back to the user.
+
 ## 0.6.21
 
 - Starts each requested task with the complete workspace playbook and distinguishes TenderLoop context and recordkeeping from the assistant's available execution tools.
