@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.6.25
+
+- Replaces the long entry instructions with a shorter ordered workflow and reads the static completion guide once at task entry, after the complete playbook.
+- Distinguishes historical restrictions from their actual current authority and scope, and directs the assistant to identify the correct workspace, account and local or cloud execution context.
+- Keeps whole-task native-evidence checks and independent review when available, without per-tool review loops. Each live task still requires verification of its actual result; the guide does not itself establish completion.
+- Fixes application pagination in discovery and record projection, preserves exact lot identity, and treats HTTP-200 HTML or other non-Atom responses as feed errors rather than successfully empty feeds.
+
 ## 0.6.24
 
 - Adds the read-only `completion_guide` tool on the hosted and local MCP routes, returning static instructions without database access or a server-generated judgment.
