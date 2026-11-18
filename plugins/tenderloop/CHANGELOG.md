@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.6.24
+
+- Adds the read-only `completion_guide` tool on the hosted and local MCP routes, returning static instructions without database access or a server-generated judgment.
+- Embeds the same guidance in the portable skill and points task-entry tools and connection instructions to it before final or terminal conclusions.
+- Guides assistants to check the original request, complete scope and current primary evidence, and use a native fresh-context read-only reviewer when available, with a self-check fallback.
+- Keeps review context in existing conversation history and avoids unchanged review loops; no transcript store, hook or automatic background loop is added.
+
 ## 0.6.23
 
 - Keeps explicitly assigned actions and portal rechecks visible on closed or archived cases, and prevents automatic housekeeping from hiding that work.

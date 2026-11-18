@@ -1,4 +1,4 @@
-# TenderLoop 0.6.23
+# TenderLoop 0.6.24
 
 TenderLoop gives your assistants one briefing and record for each workspace:
 
@@ -28,6 +28,7 @@ For e-marchespublics.com (Dematis), use the [account reconciliation guide](skill
 | Tool | What it does |
 |---|---|
 | `playbook` / `playbook_save` | Start with `playbook` and `limit: 4000`. Continue from `next_offset` with the same `part` and `expected_version`. Save updates as prose. |
+| `completion_guide` | Static instructions for checking scope, evidence and remaining work before a final conclusion. The assistant performs the checks and uses a native independent reviewer when available; the tool returns guidance, not a verdict. |
 | `chrome_pair` | Pair the Chrome extension through the signed-in OAuth connector. |
 | `get_profile` | The workspace's name, bidder identity and evidence-folder link. |
 | `today` | Work totals and previews with `pagination` for each section. Continue sections in scope using `next_offset`. `section: changed` lists changed cases. Pass the returned `since` on each continuation. `section: news` lists log entries. |

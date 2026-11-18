@@ -19,6 +19,24 @@ A case-specific claim of no published result, new requirement or owed action req
 
 An empty preview, one checked case or the ledger's `clear` flag cannot establish that the whole campaign has nothing to do. Complete pagination for every in-scope section, include waiting and review work, reconcile the opportunity queue, and check the relevant current native sources before a global absence or completion claim. State any missing source or unvisited slice. The board's completion flags concern recorded ledger work; opportunity work and unknown portal state remain separate.
 
+## Completion check
+
+Use `completion_guide` before a final completion, blocked, no-result or negative conclusion, or a terminal status change. If the tool is unavailable, apply the same checks below; its absence does not stop the task.
+
+Before a final completion, blocked, no-result or other negative conclusion, or a terminal status change, check the actual task against current evidence. This is guidance for the executing assistant, not a verdict or proof.
+
+1. Reconstruct the original request and latest corrections from the available original conversation. Identify the complete in-scope population N, exact case/lot identities, required outputs, explicit current restrictions and promised proof layer. A broad campaign is not one case; a case-only request does not authorize unrelated work. Enumerate waiting, rejected, omitted and unvisited items as well as claimed successes. Reuse current ownership, existing outputs and native receipts to avoid duplicate acts.
+
+2. Verify every claimed result, omission and blocker against the current primary source and actual file or receipt. Open the relevant evidence; a ledger note, old status, preview or prior assistant claim is a lead. Check every in-scope continuation and disclose inaccessible slices. Before claiming no published result, new requirement or owed action, check current relevant native sources; use the public buyer profile or official notice if a private route redirects. A competitor's rank or conditional proposal is not this bidder's final loss. Correct a disproved terminal status to the supported stage, preserving history and receipts.
+
+3. Challenge technical blockers. A missing operation in this catalog, environment variable, stale failure note or one failed route does not establish impossibility. Discover current capabilities and supported alternatives: exact-account sessions and credentials, TenderLoop-connected browser, supported API/browser, signature, document/media tools and recovery as needed. Respect actual current user and runtime restrictions. Continue authorized feasible work while a genuine external dependency remains; identify the exact remaining dependency from evidence.
+
+4. If native fresh-context subagents are available within current explicit restrictions, the executor launches one cheap adequate read-only independent completion reviewer, not another filer. No recursive delegation. Provide the exact original request and corrections, complete item/result/evidence index, and access to the available original visible conversation and tool record through native history, export or references. Prefer direct reading; no duplicate transcript store is required. Never invent verbatim history; identify unavailable context and actual coverage. The reviewer independently reconstructs N, opens primary evidence and challenges every claimed result, blocker and omission rather than accepting the executor's conclusion. Request verified X of N, unchecked items, concrete findings and source references, not a generic PASS.
+
+5. If independent subagents are genuinely unavailable or fail, perform the same evidence checks yourself and continue; do not claim independence. Fix every concrete finding and its in-scope siblings. Preserve verified evidence and check the changed and still-unverified full scope. Use a new fresh reviewer after a material change or new finding; do not repeat unchanged review. Repeated unchanged findings require a different execution route or an evidenced exact dependency, not a review loop. There is no arbitrary round cap or per-interaction ritual.
+
+6. A guide call, instructions version or reviewer verdict is not native proof or task completion. If this tool is unavailable, perform these checks from the embedded skill or current context; missing guidance is not a blocker. Keep review prompts, coverage metadata and internal criticism internal. Give the user concise outcomes with evidence and exact unverified slices. Do not stop at a plan when authorized execution remains.
+
 ## Use the workspace record
 
 1. Use `today` for deadlines, follow-ups and portal rechecks. Read the totals and follow `pagination[section].next_offset` for each requested section. For changed cases, use `section: changed` and keep the returned `since` timestamp across pages. Use `news` for individual log entries and the workspace timezone for deadlines.
