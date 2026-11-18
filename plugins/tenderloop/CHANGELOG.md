@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.6.23
+
+- Keeps explicitly assigned actions and portal rechecks visible on closed or archived cases, and prevents automatic housekeeping from hiding that work.
+- Separates recorded-ledger completion from review work, saved opportunities and unverified portal state; waiting previews retain pagination.
+- Reads every case page before exact case and lot selection on the hosted MCP route, matching the local transport.
+- Clarifies task scope, evidence-backed qualification and post-offer review ownership without adding a new human approval step to authorized execution.
+
 ## 0.6.22
 
 - Treats historical failure notes as evidence to recheck against the live service and current instructions.
