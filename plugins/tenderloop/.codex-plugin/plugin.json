@@ -1,6 +1,6 @@
 {
   "name": "tenderloop",
-  "version": "0.6.20",
+  "version": "0.6.21",
   "description": "Your tender playbook, deadlines, case records and saved opportunities.",
   "author": {
     "name": "Sami Halawa Ribas",
@@ -23,7 +23,7 @@
   "interface": {
     "displayName": "TenderLoop",
     "shortDescription": "Your tender notes and record",
-    "longDescription": "Manage your workspace playbook, tender records, deadlines and saved opportunities in your assistant. Connect with TenderLoop OAuth to review your workspace and record results you have verified on official procurement portals.",
+    "longDescription": "Give your assistant your tender task in one sentence. TenderLoop supplies your workspace playbook, case records, deadlines and saved opportunities. Your assistant uses its available execution tools for the requested work and records verified outcomes from the official source.",
     "developerName": "Agents AI",
     "category": "Productivity",
     "capabilities": [
@@ -33,9 +33,9 @@
       "Record a tender outcome after verifying it on the official procurement portal"
     ],
     "defaultPrompt": [
-      "Show my upcoming tender deadlines and next actions.",
-      "Summarize the tender instructions in my workspace.",
-      "List my saved open tender opportunities."
+      "Use TenderLoop to find and file a new tender.",
+      "Use TenderLoop to follow up my pending cases.",
+      "Use TenderLoop to create my updated report with audio."
     ],
     "websiteURL": "https://tenderloop.eu/",
     "supportURL": "https://tenderloop.eu/legal",
@@ -50,7 +50,7 @@
       "interface": {
         "displayName": "TenderLoop",
         "shortDescription": "Your tender notes and record",
-        "longDescription": "Manage your workspace playbook, tender records, deadlines and saved opportunities in your assistant. Connect with TenderLoop OAuth to review your workspace and record results you have verified on official procurement portals.",
+        "longDescription": "Give your assistant your tender task in one sentence. TenderLoop supplies your workspace playbook, case records, deadlines and saved opportunities. Your assistant uses its available execution tools for the requested work and records verified outcomes from the official source.",
         "developerName": "Agents AI",
         "category": "Productivity",
         "capabilities": [
@@ -60,9 +60,9 @@
           "Record a tender outcome after verifying it on the official procurement portal"
         ],
         "defaultPrompt": [
-          "Show my upcoming tender deadlines and next actions.",
-          "Summarize the tender instructions in my workspace.",
-          "List my saved open tender opportunities."
+          "Use TenderLoop to find and file a new tender.",
+          "Use TenderLoop to follow up my pending cases.",
+          "Use TenderLoop to create my updated report with audio."
         ],
         "websiteURL": "https://tenderloop.eu/",
         "supportURL": "https://tenderloop.eu/legal",
@@ -73,15 +73,15 @@
         "logo": "./assets/icon-512.png"
       },
       "publication": {
-        "release_notes": "Clarifies connector setup, approved workspace access and using recorded evidence from the official procurement portal.",
+        "release_notes": "Clarifies one-sentence task execution using workspace context and the assistant’s available tools, with native verification of outcomes.",
         "translations": {
           "es-ES": {
             "subtitle": "Tus notas y tu registro",
-            "description": "Consulta las instrucciones guardadas, los plazos registrados y las oportunidades de tu espacio de trabajo. Conecta tu cuenta de TenderLoop y guarda el resultado cuando lo hayas verificado en el portal oficial de contratación."
+            "description": "Pide a tu asistente la tarea en una frase. TenderLoop aporta el playbook, los expedientes, los plazos y las oportunidades de tu espacio. El asistente usa sus herramientas disponibles para realizar el trabajo solicitado y registrar resultados verificados en la fuente oficial."
           },
           "fr-FR": {
             "subtitle": "Vos notes et votre registre",
-            "description": "Consultez vos critères enregistrés, les échéances et les opportunités de votre espace de travail. Connectez votre compte TenderLoop et consignez les résultats que vous avez vérifiés sur le portail officiel."
+            "description": "Confiez une tâche à votre assistant en une phrase. TenderLoop fournit le guide, les dossiers, les échéances et les opportunités de votre espace. L’assistant utilise ses outils disponibles pour réaliser la tâche demandée et consigner les résultats vérifiés à la source officielle."
           }
         }
       },
@@ -91,7 +91,7 @@
         "test_cases": {
           "positive": [
             {
-              "description": "Read the review workspace instructions.",
+              "description": "Read the workspace instructions.",
               "prompt": "Summarize the tender instructions saved in my TenderLoop workspace.",
               "tools_triggered": "playbook",
               "expected_behavior": "Summarize the connected workspace’s saved review instructions."

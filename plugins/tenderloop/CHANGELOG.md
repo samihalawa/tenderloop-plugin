@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.21
+
+- Starts each requested task with the complete workspace playbook and distinguishes TenderLoop context and recordkeeping from the assistant's available execution tools.
+- Clarifies that a one-sentence filing, follow-up, report or audio request is carried through the authorized verified result; explicit review-only and draft-only requests remain limited to that scope.
+- Removes wording that incorrectly assigned every filing and verification step to the human user.
+
 ## 0.6.20
 
 - Clarifies how to review saved tender criteria, check recorded work and log an outcome verified on the official procurement portal.
