@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.27
+
+- Requires a fresh whole-task evidence review before completion or a proposed blocker when the host supports it. Each round accounts for every item and challenges the actual failing route.
+- Carries available verbatim conversation and native evidence across reviews, with a portable handoff and self-review fallback. A new review follows material changes in evidence or outcome.
+
 ## 0.6.26
 
 - Keeps the execution and whole-task review workflow directly in the bundled skill, with current-authority checks, correct browser context and native evidence verification.
