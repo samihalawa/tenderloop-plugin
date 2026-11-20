@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.28
+
+- Reconciles the full case and discovery list after review, retaining unread items and distinguishing verified outcomes, external dependencies, and unverified work.
+- Ties disputed blocker claims to the exact case, checked route, and dated primary evidence. An unresolved claim stays open with the next supported check.
+
 ## 0.6.27
 
 - Requires a fresh whole-task evidence review before completion or a proposed blocker when the host supports it. Each round accounts for every item and challenges the actual failing route.
