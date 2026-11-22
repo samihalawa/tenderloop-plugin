@@ -9,6 +9,9 @@ When the user requests a review, identify the bidder, procedure, lot, current de
 
 Check the evidence for each declaration against its issuer, legal entity and relevant period. Compare the candidate files with the scope of the request and identify any required signature. Check whether the evidence shows a response is still owed or already filed. Keep drafts, signatures, uploads, acknowledgements and buyer acceptance distinct. Treat missing facts as unknown. Flag admissions, internal material, sensitive information, unsupported commitments and incorrect channels.
 
+
+For solvency requests, distinguish economic and technical requirements. Check the exact clause, bidder's evidence of commencement, procurement regime, applicable alternatives and the stage when proof is due. Compare each requested item against the native receipt and what the buyer actually received. Where prior delivery covers only part of the requirement or attachment contents are uncertain, keep the unresolved items and their deadline explicit.
+
 Return the following verdict to the executing assistant:
 
 - `RECORD_REVIEW` with `SEND`, `REVISE`, `SKIP` or `BLOCK`.

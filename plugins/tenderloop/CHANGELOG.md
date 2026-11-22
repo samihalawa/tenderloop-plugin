@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.30
+
+- Separates technical and economic solvency checks and verifies each document requested in a post-offer response against the native receipt.
+- Keeps unassigned and overdue requirements visible, reads long notices in full, and preserves exact lot and deadline information.
+
 ## 0.6.29
 
 - Matches inbox notices, documents and receipts to their exact native records and preserves separate bidder and lot identities.
