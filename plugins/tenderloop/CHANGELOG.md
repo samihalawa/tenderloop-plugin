@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.31
+
+- Aligns the packaged release notes with the solvency, evidence and follow-up improvements introduced in 0.6.30.
+
 ## 0.6.30
 
 - Separates technical and economic solvency checks and verifies each document requested in a post-offer response against the native receipt.

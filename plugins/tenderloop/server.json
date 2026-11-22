@@ -8,7 +8,7 @@
     "url": "https://github.com/samihalawa/tenderloop-plugin",
     "source": "github"
   },
-  "version": "0.6.30",
+  "version": "0.6.31",
   "remotes": [
     {
       "type": "streamable-http",

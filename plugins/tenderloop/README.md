@@ -1,4 +1,4 @@
-# TenderLoop 0.6.30
+# TenderLoop 0.6.31
 
 TenderLoop gives your assistants one briefing and record for each workspace:
 

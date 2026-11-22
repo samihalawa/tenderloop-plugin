@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "tenderloop",
-  "version": "0.6.30",
+  "version": "0.6.31",
   "description": "Your tender playbook, deadlines, case records and saved opportunities.",
   "author": {
     "name": "Sami Halawa Ribas",
@@ -48,7 +48,7 @@
         "logo": "./assets/icon-512.png"
       },
       "publication": {
-        "release_notes": "Clarifies one-sentence task execution using workspace context and the assistant’s available tools, with native verification of outcomes.",
+        "release_notes": "Adds separate technical and economic solvency checks, verifies post-offer requested documents against native receipts, and keeps overdue or unassigned requirements, long notices, exact lots, and deadlines visible for follow-up.",
         "translations": {
           "es-ES": {
             "subtitle": "Tus notas y tu registro",
