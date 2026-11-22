@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.29
+
+- Matches inbox notices, documents and receipts to their exact native records and preserves separate bidder and lot identities.
+- Identifies private inboxes that could not be read and records public tender evidence at its verified scope.
+- Keeps one run responsible through audio delivery and checks the spoken dates, times, case references and amounts against the verified handoff.
+
 ## 0.6.28
 
 - Reconciles the full case and discovery list after review, retaining unread items and distinguishing verified outcomes, external dependencies, and unverified work.
