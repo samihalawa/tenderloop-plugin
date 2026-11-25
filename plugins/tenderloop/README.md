@@ -1,4 +1,4 @@
-# TenderLoop 0.6.31
+# TenderLoop 0.7.0
 
 TenderLoop gives your assistants one briefing and record for each workspace:
 
@@ -31,13 +31,13 @@ For e-marchespublics.com (Dematis), use the [account reconciliation guide](skill
 |---|---|
 | `playbook` / `playbook_save` | Start with `playbook` and `limit: 4000`. Continue from `next_offset` with the same `part` and `expected_version`. Save updates as prose. |
 | `chrome_pair` | Pair the Chrome extension through the signed-in OAuth connector. |
-| `get_profile` | The workspace's name, bidder identity and evidence-folder link. |
+| `get_profile` | The workspace's name, bidder identity and canonical Git repository for tender documents. |
 | `today` | Work totals and previews with `pagination` for each section. Continue sections in scope using `next_offset`. `section: changed` lists changed cases. Pass the returned `since` on each continuation. `section: news` lists log entries. |
 | `tracker_list` / `tracker_get` | Page the workspace ledger or read one case, its history and portal details. Check the portal for current status. |
 | `tracker_log` | Record the portal outcome and evidence. A new application needs `filed_at` and its receipt. Use the returned `checked_at` for fresh rechecks. |
 | `catchup_request` | Ask for a tender to be checked on its portal. |
 | `platform_guide` / `platform_guide_update` | How to reach a portal (never a password). |
-| `tracker_purge` | Preview or reversibly archive empty, closed or duplicate rows. |
+| `tracker_archive` | Preview or reversibly archive empty, closed or duplicate rows. |
 | `opportunity_add` / `opportunity_list` / `opportunity_review` | Save, read and correct found tenders. Reopen an unsupported closure as open and unread while preserving its history. |
 | `opportunity_take` / `opportunity_release` / `opportunity_close` | Claim specific IDs or the next available lots, release a mistaken hold, or close a lot with evidence. Use `correct_closed: true`, the exact ID and the latest `expected_revision` to correct a closed row’s evidence while keeping it closed. |
 

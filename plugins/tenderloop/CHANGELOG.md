@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.7.0
+
+- Replaces Google Drive and ambiguous `pack_url` links with Git-only `documents_repo` (`samihalawa/licitaciones-packs`) on workspaces and repo-relative `pack_path` on bids and opportunities, computing `pack_url` directly from the workspace repository.
+- Removes legacy database fields and aliases (`documentRootUrl`, `unclear` status, `requirement` alias, `crawlabSpider`, `platforms.account`, `accounts.credentialItem`, `additionalCredentialItems`, `opportunities.ai`) and renames `tracker_purge` to `tracker_archive`.
+
+## 0.6.32
+
+- Adds atomic PostgreSQL bid holds (`tracker_take` and `tracker_release`) alongside `opportunity_take` and `opportunity_release`, preventing concurrent agents from colliding on filed bids or open opportunities.
+- Switches `/app/` Aplicaciones to fast `compact=true` loading with on-demand history hydration, adds bid-hold visibility/release controls, raises playbook limit to 120,000 characters, adds `/favicon.ico` rewrites, upgrades Next.js to 16.4.6, and prunes expired OAuth tokens automatically.
+
 ## 0.6.31
 
 - Aligns the packaged release notes with the solvency, evidence and follow-up improvements introduced in 0.6.30.
